@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Wed May 25 2016 17:49:18 GMT+0000 (UTC) -->
+<!-- Last Published: Wed May 25 2016 18:09:59 GMT+0000 (UTC) -->
 <html data-wf-site="573effc51d175a09162ad2a3" data-wf-page="573effc51d175a09162ad2b0">
 <head>
   <meta charset="utf-8">
@@ -48,8 +48,32 @@
     @font-face {font-family: 'LunchBoxSlab';src: url('webfonts/30E7A7_0_0.eot');src: url('webfonts/30E7A7_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/30E7A7_0_0.woff2') format('woff2'),url('webfonts/30E7A7_0_0.woff') format('woff'),url('webfonts/30E7A7_0_0.ttf') format('truetype');}
   </style>
 </head>
-<body>
+<body class="body">
+  <div class="w-container container-top-nav">
+    <div class="w-hidden-medium w-hidden-small w-hidden-tiny top-nav"><a href="#" class="top-nav-link">Login</a><a href="#" class="top-nav-link">Register</a>
+      <div class="basket-wrap"><img width="22" src="images/basket.svg" class="basket-icon"><a href="#" class="top-nav-link top-nav-link_basket">20 items</a>
+      </div>
+    </div>
+  </div>
   <div class="w-container">
+    <div data-collapse="medium" data-animation="default" data-duration="400" data-contain="1" class="w-nav navbar">
+      <div class="w-container nav-container">
+        <a href="#" class="w-nav-brand brand"><img width="183" src="images/Dovinia-Logo-violet-positive.png" class="logo">
+        </a>
+        <nav role="navigation" class="w-nav-menu nav-menu"><a href="collection.html" class="w-nav-link navlink">Chocolate Boutique</a><a href="about-us.html" class="w-nav-link navlink">About Us</a><a href="contact.html" class="w-nav-link navlink">Contact</a>
+          <div class="nav-link-seach">
+            <div class="w-embed search-form">
+              <input name="search" type="textfield" class="input search" placeholder="Search...">
+            </div>
+          </div><a href="#" class="w-nav-link w-hidden-main navlink navlink_search-invisible">Search</a>
+        </nav>
+        <div class="w-nav-button menu-button menu-button-basket"><img width="50%" src="images/basket.svg" class="basket-icon">
+        </div>
+        <div class="w-nav-button menu-button">
+          <div class="w-icon-nav-menu menu-button-icon"></div>
+        </div>
+      </div>
+    </div>
     <h1 class="collection-title">Cheese Chocolates Collection</h1>
     <p class="collection-description">A savoury collection, made with mostly Irish cheeses and local ingredients.
       <br>Designed for a grown-up palate, flavourful and less sweet!</p>
