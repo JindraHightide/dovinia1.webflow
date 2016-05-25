@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Wed May 25 2016 14:15:27 GMT+0000 (UTC) -->
+<!-- Last Published: Wed May 25 2016 17:49:18 GMT+0000 (UTC) -->
 <html data-wf-site="573effc51d175a09162ad2a3" data-wf-page="573effc51d175a09162ad2a5">
 <head>
   <meta charset="utf-8">
@@ -15,7 +15,7 @@
   <script>
     WebFont.load({
       google: {
-        families: ["Montserrat:400,700","Libre Baskerville:regular,italic,700"]
+        families: ["Libre Baskerville:regular,italic,700"]
       }
     });
   </script>
@@ -49,58 +49,37 @@
   </style>
 </head>
 <body class="body">
-  <div data-collapse="medium" data-animation="default" data-duration="400" data-contain="1" class="w-nav navbar">
-    <div class="w-container container-top-nav">
-      <div class="w-hidden-medium w-hidden-small w-hidden-tiny top-nav"><a href="#" class="top-nav-link">Login</a><a href="#" class="top-nav-link">Register</a>
-        <div class="basket-wrap"><img width="22" src="images/basket.svg" class="basket-icon"><a href="#" class="top-nav-link top-nav-link_basket">20 items</a>
-        </div>
+  <div class="w-container container-top-nav">
+    <div class="w-hidden-medium w-hidden-small w-hidden-tiny top-nav"><a href="#" class="top-nav-link">Login</a><a href="#" class="top-nav-link">Register</a>
+      <div class="basket-wrap"><img width="22" src="images/basket.svg" class="basket-icon"><a href="#" class="top-nav-link top-nav-link_basket">20 items</a>
       </div>
     </div>
+  </div>
+  <div data-collapse="medium" data-animation="default" data-duration="400" data-contain="1" class="w-nav navbar">
     <div class="w-container nav-container">
-      <nav role="navigation" class="w-nav-menu nav-menu">
-        <div data-delay="0" class="w-dropdown navlink">
-          <div class="w-dropdown-toggle navlink-toggle">
-            <div class="navlink-toggle_text">Chocolate Boutique</div>
-            <div class="w-icon-dropdown-toggle navlink-toogle-icon"></div>
-          </div>
-          <nav class="w-dropdown-list dropdown-list"><a href="collection.html" class="w-dropdown-link dropdown-link">Special Selection</a><a href="#" class="w-dropdown-link dropdown-link">Chocolate Bars</a><a href="#" class="w-dropdown-link dropdown-link">Bites of Bliss</a><a href="#" class="w-dropdown-link dropdown-link">Cheese Chocolates</a><a href="#" class="w-dropdown-link dropdown-link">Novelties</a><a href="#" class="w-dropdown-link dropdown-link">Chocolate spoons</a>
-          </nav>
-        </div><a href="about-us.html" class="w-nav-link navlink">About Dovinia</a>
-      </nav>
-      <div class="w-nav-button menu-button menu-button-basket"><img width="24" src="images/basket.svg" class="basket-icon">
-      </div>
-      <a href="index.html" class="w-nav-brand brand"><img width="150" src="images/Dovinia-Logo-violet-positive.png">
+      <a href="#" class="w-nav-brand brand"><img width="183" src="images/Dovinia-Logo-violet-positive.png" class="logo">
       </a>
+      <nav role="navigation" class="w-nav-menu nav-menu"><a href="collection.html" class="w-nav-link navlink">Chocolate Boutique</a><a href="about-us.html" class="w-nav-link navlink">About Us</a><a href="contact.html" class="w-nav-link navlink">Contact</a>
+        <div class="nav-link-seach">
+          <div class="w-embed search-form">
+            <input name="search" type="textfield" class="input search" placeholder="Search...">
+          </div>
+        </div><a href="#" class="w-nav-link w-hidden-main navlink navlink_search-invisible">Search</a>
+      </nav>
+      <div class="w-nav-button menu-button menu-button-basket"><img width="50%" src="images/basket.svg" class="basket-icon">
+      </div>
       <div class="w-nav-button menu-button">
         <div class="w-icon-nav-menu menu-button-icon"></div>
-      </div>
-      <nav role="navigation" class="w-nav-menu nav-menu"><a href="contact.html" class="w-nav-link navlink">Contact us</a>
-      </nav>
-      <div class="nav-link-seach">
-        <div class="w-embed search-form">
-          <input name="search" type="textfield" class="input search" placeholder="Search...">
-        </div>
-      </div>
-      <div class="w-form form-wrapper">
-        <form id="email-form" name="email-form" data-name="Email Form" class="w-clearfix search-form-cointaner">
-          <input id="email" type="email" placeholder="Enter your email address" name="email" data-name="Email" required="required" class="w-input search-field">
-          <input type="submit" value="Search" data-wait="Please wait..." class="w-button search_button">
-        </form>
-        <div class="w-form-done">
-          <p>Thank you! Your submission has been received!</p>
-        </div>
-        <div class="w-form-fail">
-          <p>Oops! Something went wrong while submitting the form</p>
-        </div>
       </div>
     </div>
   </div>
   <div class="w-section">
     <div class="w-container container">
       <div class="first-item">
-        <div class="first-itemimagewrap first-item-image"></div>
+        <div class="first-itemimagewrap first-item-image"><img src="images/CheeseChocolates-wide.jpg" class="first-item_image">
+        </div>
         <div class="first-item_text-wrap">
-          <h1 class="item-heading first-item-heading">Special selection</h1>
+          <h1 class="item-heading first-item-heading">Easter Egg</h1>
           <div class="subheading first-iterm_subheading">A hundred grams of ethically sourced, sustainable grown chocolate. A hundred grams of ethically&nbsp;A hundred grams of ethically sourced, sustainable grown chocolate.&nbsp;</div><a href="product-details.html" class="w-button button button-extralarge">Shop Now</a>
           <div class="button-description">Secure and fast shopping</div>
         </div>
