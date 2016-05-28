@@ -43,7 +43,7 @@ h1 {
 }
 
 .item.item-dynamic {
-  height: 38em;
+  height: auto;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -64,7 +64,7 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  height: 13rem;
+  height: 10rem;
   margin: 7px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -205,6 +205,7 @@ h1 {
 }
 
 .image-wrap {
+  overflow: hidden;
   width: 100%;
   height: auto;
   -webkit-align-self: flex-start;
@@ -352,6 +353,7 @@ h1 {
 }
 
 .cointainer-trust-proposition {
+  margin-bottom: 37px;
   padding: 33px;
 }
 
@@ -771,9 +773,9 @@ h1 {
   flex: 0 0 50%;
 }
 
-.collection-title {
+.page-title {
   margin-top: 25px;
-  margin-bottom: 29px;
+  margin-bottom: -2px;
   font-family: 'Libre Baskerville', sans-serif;
   font-weight: 400;
   text-align: center;
@@ -787,16 +789,19 @@ h1 {
 }
 
 .container-background {
+  margin-top: 21px;
+  margin-bottom: 53px;
   padding: 38px 42px;
   background-color: #fff;
   text-align: center;
 }
 
 .paragraph-text {
-  margin-top: 24px;
+  margin-top: 0px;
   font-family: 'Libre Baskerville', sans-serif;
   font-size: 16px;
   line-height: 24px;
+  text-align: left;
 }
 
 .uppercase {
@@ -1024,10 +1029,12 @@ h1 {
 .collection_image {
   width: 100%;
   height: auto;
-  max-height: auto;
   max-width: none;
   min-height: auto;
-  min-width: 150%;
+  min-width: 110%;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
   -webkit-box-flex: 0;
   -webkit-flex: 0 auto;
   -ms-flex: 0 auto;
@@ -1197,7 +1204,7 @@ h1 {
 .product-image {
   height: auto;
   max-height: 100%;
-  min-width: 160%;
+  min-width: 100%;
   -webkit-align-self: flex-start;
   -ms-flex-item-align: start;
   align-self: flex-start;
@@ -1205,6 +1212,10 @@ h1 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+}
+
+.product-image.ogham {
+  min-width: auto;
 }
 
 .product-container {
@@ -1268,8 +1279,20 @@ h1 {
 }
 
 .social-share {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   padding-top: 5px;
   padding-bottom: 5px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .social-share_icon {
@@ -1488,6 +1511,86 @@ h1 {
   justify-content: center;
 }
 
+.cart-links {
+  margin-top: 33px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 1px solid #3a0f06;
+}
+
+.cart-link {
+  font-family: 'Libre Baskerville', sans-serif;
+  color: #4c2a79;
+  text-decoration: none;
+}
+
+.cart-link:hover {
+  color: #99642d;
+}
+
+.subscription-call-out {
+  width: 50%;
+  text-align: left;
+}
+
+.thankyoupage-cointaner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 118px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.contact-container {
+  margin-top: 28px;
+  margin-bottom: 57px;
+  padding: 51px;
+  background-color: #fff;
+}
+
+.h3-tittle {
+  margin-bottom: 24px;
+  font-family: '30e7a7 0 0', Georgia, sans-serif;
+  color: #4c2a79;
+  font-size: 2em;
+  line-height: 1em;
+  text-align: center;
+}
+
+.columns {
+  padding-right: 31px;
+  padding-left: 31px;
+}
+
+.h2-title {
+  margin-top: 0px;
+  padding-bottom: 11px;
+  border-bottom: 1px solid #865045;
+  font-family: 'Libre Baskerville', sans-serif;
+  color: #865045;
+  font-size: 2em;
+  font-style: italic;
+  text-align: center;
+}
+
+.row {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.fb-feed-image {
+  padding-top: 19px;
+}
+
 @media (max-width: 991px) {
   h1 {
     margin-bottom: 0px;
@@ -1522,7 +1625,7 @@ h1 {
     align-self: stretch;
   }
   .block-item-image {
-    height: 13rem;
+    height: 8rem;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
@@ -1599,8 +1702,8 @@ h1 {
   }
   .h1-block-secondary {
     margin-top: 0px;
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 3em;
+    line-height: 1em;
   }
   .cointainer-trust-proposition {
     padding-bottom: 0px;
@@ -1649,8 +1752,8 @@ h1 {
   }
   .item-heading {
     margin-bottom: 9px;
-    font-size: 1.7rem;
-    line-height: 1.9rem;
+    font-size: 2em;
+    line-height: 1em;
   }
   .item-heading.first-item-heading {
     margin-top: 0rem;
@@ -1670,6 +1773,9 @@ h1 {
     -webkit-align-self: stretch;
     -ms-flex-item-align: stretch;
     align-self: stretch;
+  }
+  .container-background {
+    margin-bottom: 20px;
   }
   .brand {
     display: -webkit-box;
@@ -1749,9 +1855,9 @@ h1 {
   }
   .collection_image {
     display: inline-block;
-    width: 100%;
-    min-height: 120%;
-    min-width: 120%;
+    height: auto;
+    min-height: auto;
+    min-width: 110%;
   }
   .form_text-field {
     width: 100%;
@@ -1781,7 +1887,9 @@ h1 {
     flex-grow: 2;
   }
   .product-image {
-    min-width: auto;
+    height: auto;
+    min-height: auto;
+    min-width: 100%;
     -webkit-align-self: flex-start;
     -ms-flex-item-align: start;
     align-self: flex-start;
@@ -1805,6 +1913,10 @@ h1 {
   .basket-summary {
     background-color: transparent;
   }
+  .cart-links {
+    padding-top: 17px;
+    padding-bottom: 0px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1822,7 +1934,7 @@ h1 {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    height: auto;
+    height: 28em;
     min-height: 0px;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
@@ -1898,6 +2010,7 @@ h1 {
   }
   .button {
     margin-bottom: 18px;
+    font-size: 1.5em;
   }
   .h1-block-secondary {
     margin-top: 0.3em;
@@ -1907,6 +2020,10 @@ h1 {
   }
   .cointainer-trust-proposition {
     padding-bottom: 19px;
+  }
+  .statement {
+    font-size: 1.1em;
+    line-height: 1.5em;
   }
   .logo-award-wrap {
     height: 200px;
@@ -1975,24 +2092,29 @@ h1 {
     justify-content: center;
   }
   .subheading {
-    font-size: 0.7rem;
-    line-height: 22px;
+    font-size: 1.1em;
+    line-height: 1.5em;
+  }
+  .subheading.first-iterm_subheading {
+    font-size: 1em;
   }
   .subheading.special-selection_subheading {
     padding-right: 1rem;
+    line-height: 1.5em;
   }
   .item-heading {
     margin-top: 21px;
     padding-bottom: 12px;
-    font-size: 1.7rem;
-    line-height: 28px;
+    font-size: 2.4em;
+    line-height: 1em;
   }
   .item-heading.first-item-heading {
     font-size: 2rem;
     line-height: 32px;
   }
   .item-heading.special-selection_heading {
-    line-height: 30px;
+    font-size: 2.5em;
+    line-height: 1em;
   }
   .quotation {
     line-height: 26px;
@@ -2035,6 +2157,7 @@ h1 {
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
+    font-size: 1em;
   }
   .collection-container {
     -webkit-box-orient: vertical;
@@ -2044,11 +2167,10 @@ h1 {
     flex-direction: column;
   }
   .collection_image {
-    width: auto;
-    height: 100%;
-    max-height: 100%;
-    max-width: none;
-    min-height: 150%;
+    width: 110%;
+    height: auto;
+    max-height: none;
+    min-height: auto;
     min-width: auto;
     -webkit-align-self: center;
     -ms-flex-item-align: center;
@@ -2221,6 +2343,7 @@ h1 {
     display: -ms-flexbox;
     display: flex;
     overflow: hidden;
+    height: auto;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
@@ -2257,6 +2380,11 @@ h1 {
   .image-wrap {
     width: 100%;
   }
+  .image-wrap.image-wrap-tsecondary {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+  }
   .logo {
     width: 80%;
   }
@@ -2264,7 +2392,7 @@ h1 {
     margin-bottom: auto;
     padding-top: 7px;
     padding-bottom: 5px;
-    font-size: 18px;
+    font-size: 1.4em;
   }
   .button.button-extralarge {
     margin-bottom: 0.3em;
@@ -2341,8 +2469,8 @@ h1 {
   }
   .subheading {
     padding-top: 0px;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1em;
+    line-height: 1.3em;
   }
   .subheading.first-iterm_subheading {
     padding-top: 10px;
@@ -2358,8 +2486,8 @@ h1 {
     margin-top: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
-    font-size: 1.5rem;
-    line-height: 24px;
+    font-size: 2.3em;
+    line-height: 1em;
   }
   .item-heading.first-item-heading {
     padding-bottom: 4px;
@@ -2398,11 +2526,15 @@ h1 {
     -ms-flex-negative: 1;
     flex-shrink: 1;
   }
+  .menu-button.menu-button-basket {
+    margin-top: 0px;
+    padding: 25px 18px 18px;
+  }
   .menu-button-icon {
     font-size: 24px;
   }
   .basket-icon {
-    font-size: 22px;
+    font-size: 1em;
   }
   .special-selection-container {
     -webkit-box-orient: vertical;
@@ -2422,10 +2554,8 @@ h1 {
     flex-direction: column;
   }
   .collection_image {
-    width: auto;
-    height: auto;
-    max-height: auto;
-    max-width: auto;
+    width: 110%;
+    height: 100%;
     min-width: auto;
   }
   .form_text-field {
@@ -2462,6 +2592,13 @@ h1 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+  .product-image {
+    height: none;
+    max-height: none;
+    max-width: none;
+    min-height: auto;
+    min-width: auto;
   }
   .product-page-nav {
     text-align: center;
@@ -2517,6 +2654,9 @@ h1 {
   .basket-summary-category-title.total {
     font-size: 1.4em;
     line-height: 1.4em;
+  }
+  .field-name {
+    font-family: 'Libre Baskerville', sans-serif;
   }
 }
 
