@@ -269,14 +269,14 @@ h1 {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 auto;
-  -ms-flex: 0 auto;
-  flex: 0 auto;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .navlink {
-  padding: 18px;
+  padding: 18px 0px;
   font-family: '30e7a7 0 0', Georgia, sans-serif;
   font-size: 24px;
 }
@@ -353,8 +353,8 @@ h1 {
 }
 
 .cointainer-trust-proposition {
-  margin-bottom: 37px;
-  padding: 33px;
+  margin-bottom: 0px;
+  padding: 2em 1em 1em;
 }
 
 .statement {
@@ -370,7 +370,7 @@ h1 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100px;
+  height: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -380,17 +380,22 @@ h1 {
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-align-content: stretch;
-  -ms-flex-line-pack: stretch;
-  align-content: stretch;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
 }
 
 .awards-logos {
   width: auto;
-  height: 100px;
+  height: 6em;
+  margin-top: 21px;
+  margin-bottom: 21px;
+  padding-top: 0px;
+  padding-right: 16px;
+  padding-left: 16px;
 }
 
 .colection-title {
@@ -775,7 +780,7 @@ h1 {
 
 .page-title {
   margin-top: 25px;
-  margin-bottom: -2px;
+  margin-bottom: 0.5em;
   font-family: 'Libre Baskerville', sans-serif;
   font-weight: 400;
   text-align: center;
@@ -791,7 +796,7 @@ h1 {
 .container-background {
   margin-top: 21px;
   margin-bottom: 53px;
-  padding: 38px 42px;
+  padding: 38px 82px;
   background-color: #fff;
   text-align: center;
 }
@@ -804,6 +809,16 @@ h1 {
   text-align: left;
 }
 
+.paragraph-text.contact-text {
+  font-size: 1.2em;
+  line-height: 1.4em;
+  text-align: center;
+}
+
+.paragraph-text.text-page {
+  text-align: center;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -814,7 +829,12 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   width: auto;
+  padding-left: 0px;
   float: right;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -822,14 +842,34 @@ h1 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   background-color: transparent;
   text-align: center;
 }
 
 .brand {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   width: auto;
+  margin-right: 6em;
   padding-top: 13px;
   padding-bottom: 13px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   text-align: center;
 }
 
@@ -1086,17 +1126,17 @@ h1 {
   border-bottom-color: #fff;
 }
 
-.fotter_text {
+.fotter-text {
   margin-bottom: 6px;
   font-family: 'Libre Baskerville', sans-serif;
   color: #fff;
 }
 
-.fotter_text:hover {
+.fotter-text:hover {
   color: hsla(0, 0%, 100%, .77);
 }
 
-.fotter_text.footer_text_form {
+.fotter-text.footer_text_form {
   margin-bottom: 13px;
 }
 
@@ -1591,6 +1631,23 @@ h1 {
   padding-top: 19px;
 }
 
+.item-wrap-link-block {
+  text-decoration: none;
+}
+
+.footer-text-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-text-link:hover {
+  color: hsla(0, 0%, 100%, .77);
+}
+
+.map {
+  padding-top: 17px;
+}
+
 @media (max-width: 991px) {
   h1 {
     margin-bottom: 0px;
@@ -1690,6 +1747,12 @@ h1 {
     flex-grow: 1;
     background-image: none;
   }
+  .logo {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 auto;
+    -ms-flex: 0 auto;
+    flex: 0 auto;
+  }
   .navlink {
     background-color: #fff;
   }
@@ -1712,14 +1775,17 @@ h1 {
     margin-bottom: 7px;
   }
   .logo-award-wrap {
-    height: 250px;
-    -webkit-justify-content: space-around;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
+    height: auto;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .awards-logos {
-    height: 90px;
-    margin: 16px 13px;
+    height: 6em;
+    margin: 16px 8px;
+    padding-right: 0px;
+    padding-left: 0px;
   }
   .secondary-items-wrap {
     height: auto;
@@ -1783,6 +1849,7 @@ h1 {
     display: -ms-flexbox;
     display: flex;
     width: auto;
+    margin-right: 0em;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -1795,7 +1862,7 @@ h1 {
     -webkit-flex: 0 auto;
     -ms-flex: 0 auto;
     flex: 0 auto;
-    text-align: left;
+    text-align: center;
   }
   .menu-button {
     padding-top: 26px;
@@ -1835,6 +1902,7 @@ h1 {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    text-align: left;
   }
   .basket-icon {
     margin-left: 0px;
@@ -1917,6 +1985,9 @@ h1 {
     padding-top: 17px;
     padding-bottom: 0px;
   }
+  .map {
+    padding-top: 32px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1989,6 +2060,9 @@ h1 {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
   }
+  .image-wrap {
+    padding: 25px;
+  }
   .image-wrap.image-wrap-tsecondary {
     display: block;
     height: auto;
@@ -2019,21 +2093,28 @@ h1 {
     line-height: 1em;
   }
   .cointainer-trust-proposition {
-    padding-bottom: 19px;
+    margin-bottom: 0px;
+    padding: 1em 2em;
   }
   .statement {
     font-size: 1.1em;
     line-height: 1.5em;
   }
   .logo-award-wrap {
-    height: 200px;
+    height: 100%;
+    margin-bottom: 0px;
+    padding-top: 19px;
+    padding-bottom: 0px;
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .awards-logos {
     height: 80px;
-    margin: 10px;
+    margin: 10px 10px 19px;
     padding: 0px;
   }
   .popularpresents {
@@ -2134,6 +2215,12 @@ h1 {
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     align-self: center;
+  }
+  .container-background {
+    padding: 15px;
+  }
+  .paragraph-text {
+    text-align: center;
   }
   .menu-button {
     -webkit-box-ordinal-group: 0;
@@ -2307,6 +2394,12 @@ h1 {
   .basket-summary-category-title.value {
     margin-top: 0rem;
   }
+  .contact-container {
+    padding: 7px;
+  }
+  .columns {
+    text-align: center;
+  }
 }
 
 @media (max-width: 479px) {
@@ -2379,6 +2472,7 @@ h1 {
   }
   .image-wrap {
     width: 100%;
+    padding: 18px;
   }
   .image-wrap.image-wrap-tsecondary {
     -webkit-align-self: center;
@@ -2408,14 +2502,16 @@ h1 {
   }
   .logo-award-wrap {
     height: auto;
+    padding-top: 1em;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
   }
   .awards-logos {
+    width: auto;
     height: 80px;
-    margin: 14px;
+    margin: 1em;
   }
   .secondary-items-wrap {
     -webkit-box-orient: vertical;
@@ -2525,6 +2621,12 @@ h1 {
     -webkit-flex-shrink: 1;
     -ms-flex-negative: 1;
     flex-shrink: 1;
+  }
+  .container-background {
+    padding: 6px;
+  }
+  .paragraph-text {
+    text-align: center;
   }
   .menu-button.menu-button-basket {
     margin-top: 0px;
@@ -2654,6 +2756,12 @@ h1 {
   .basket-summary-category-title.total {
     font-size: 1.4em;
     line-height: 1.4em;
+  }
+  .contact-container {
+    padding: 4px;
+  }
+  .columns {
+    text-align: center;
   }
   .field-name {
     font-family: 'Libre Baskerville', sans-serif;
